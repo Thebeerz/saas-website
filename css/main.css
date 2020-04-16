@@ -1,0 +1,91 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  font-family: "Noto Sans", serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  color: white;
+  max-width: 50em;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  max-height: 24em;
+  overflow: hidden;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  color: white;
+}
+
+label {
+  background-color: #3b1b23;
+  cursor: pointer;
+  border-radius: .3rem;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: .2rem;
+  z-index: 1;
+  height: 1.5rem;
+  width: 8rem;
+  margin-top: .5rem;
+  display: inline-block;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu {
+  font-size: 1.1rem;
+  z-index: 1;
+  background-color: #000;
+  overflow: hidden;
+  max-height: 0;
+  position: absolute;
+  left: .5rem;
+  bottom: 0;
+  max-width: 7rem;
+  height: 15rem;
+  padding: 0 1rem;
+  -webkit-transition: all .5s ease;
+}
+
+#menu li {
+  padding: .5rem;
+}
+
+#menu-toggle:checked + #menu {
+  max-height: 11.5rem;
+  position: absolute;
+  left: .3rem;
+  bottom: -12rem;
+}
