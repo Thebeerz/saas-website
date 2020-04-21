@@ -32,11 +32,17 @@ header {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 .img-flex {
   display: block;
   width: 100%;
+}
+
+.btn-red {
+  background-color: #e34c38;
+  border: none;
 }
 
 .banner {
@@ -47,13 +53,11 @@ a {
 
 .banner-content {
   position: absolute;
-  bottom: 5%;
-  left: 10%;
+  bottom: 20%;
   color: white;
 }
 
 label {
-  background-color: #3b1b23;
   cursor: pointer;
   border-radius: .3rem;
   font-size: 1rem;
