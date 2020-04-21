@@ -33,6 +33,11 @@ header {
 hr {
   border-bottom: 3px solid #fff;
 }
+
+select, input {
+  color: #000;
+}
+
 a {
   color: white;
   text-decoration: none;

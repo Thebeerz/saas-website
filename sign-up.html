@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>SAAS Website</title>
+  <title>SAAS Website Sign up</title>
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
@@ -12,21 +12,28 @@
 </head>
 
 <body class="wrapper">
-    <header class="zindex-1000">
-      <h1 class="gutter">
-        <a class="logo" href="index.html">E-Ouija</a>
-      </h1>
-      <!-- <label for="menu-toggle">Menu</label>
-      <input type="checkbox" id="menu-toggle"> -->
-      <div class="text-right gutter">
-      <nav class="island" id="menu">
-        <ul class="nav list-group list-group-inline">
-          <li class="btn"><a href="index.html">Home</a></li>
-          <li class="btn"><a href="sign-up.html" class="current">Sign-up</a></li>
-          <li class="btn"><a href="tour.html">Features</a></li>
-        </ul>
-      </nav>
-    </header>
+
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#freetrial">Jump to Free trial</a></li>
+    <li><a href="#membership">Jump to Membership</a></li>
+  </ul>
+
+  <header role="banner">
+  <div class="masthead grid grid-middle gutter">
+    <h1 class="logo push-0 unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
+      <span class="logo-text icon-label text-left">E-OUIJA</span>
+    </h1>
+    <nav role="navigation" id="nav" tabindex="0" class="nav unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
+      <ul class="nav list-group list-group-inline push-0">
+        <li class="btn"><a href="index.html">Home</a></li>
+        <li class="btn"><a href="sign-up.html" class="current">Sign up</a></li>
+        <li class="btn"><a href="tour.html">Features</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <section class="contact max-length island" tabindex="0">
       <div>
@@ -34,56 +41,33 @@
 
         <form class="push-0 max-width" method="POST" action="https://formspree.io/">
           <fieldset class="push-0">
-            <legend class="mega not-bold push-1-2">Free trial</legend>
-            <p class="mega max-length no-auto-margins push-1-2">Try E-Ouija free for 1 month!</p>
+            <legend class="mega not-bold push-1-2" id="freetrial">Join E-OUIJA</legend>
             <section class="grid max-length">
-
-
               <div class="unit xs-1 s-1 m-1 l-1-2">
-                <label class="kilo" for="email">Email</label>
+                <label class="kilo text-left" for="email">Email</label>
                 <input class="push" id="email" type="email" name="email" required>
               </div>
 
               <div class="unit xs-1 s-1 m-1 l-1-2">
-                <label class="kilo" for="password">Password</label>
-                <input class="push" id="password" type="password" name="password">
+                <label class="kilo text-left" for="password">Password</label>
+                <input class="push" id="password" type="password" name="password" required>
               </div>
+
+              <div class="unit xs-1 s-1 m-1 l-1-2">
+                <label class="kilo text-left" for="plan">Choose plan</label>
+                <select id="plan">
+                <option value="">Choose your plan</option>
+                <option>One Month Free Trial</option>
+                <option>Annual Membership</option>
+                </select>
+              </div>
+
             </section>
           </fieldset>
-          <div class="text-center">
-          <button class="btn kilo" type="submit">Start trial</button>
+          <div class="text-center pad-t">
+          <button class="btn btn-red kilo" type="submit">Start classes!</button>
         </div>
         </form>
-
-        <form class="push-0 max-width" method="POST" action="https://formspree.io/">
-          <fieldset class="push-0">
-            <legend class="mega not-bold push-1-2">Membership</legend>
-            <p class="mega max-length no-auto-margins push-1-2">Enjoy unlimited classes and course material!</p>
-            <section class="grid max-length">
-
-
-              <div class="unit xs-1 s-1 m-1 l-1-2">
-                <label class="kilo" for="name">Name</label>
-                <input class="push" id="name" type="name" name="name" required>
-              </div>
-
-              <div class="unit xs-1 s-1 m-1 l-1-2">
-                <label class="kilo" for="email">Email</label>
-                <input class="push" id="email" type="email" name="email" required>
-              </div>
-
-              <div class="unit xs-1 s-1 m-1 l-1-2">
-                <label class="kilo" for="password">Password</label>
-                <input class="push" id="password" type="password" name="password">
-              </div>
-            </section>
-          </fieldset>
-          <div class="text-center">
-          <button class="btn kilo" type="submit">Join</button>
-        </div>
-        </form>
-      </div>
-    </section>
 
     <footer class="pad-t-2 gutter">
 
