@@ -16,12 +16,11 @@
   <ul class="skip-links">
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
-    <li><a href="#freetrial">Jump to Free trial</a></li>
-    <li><a href="#membership">Jump to Membership</a></li>
+    <li><a href="#form">Jump to form</a></li>
   </ul>
 
   <header role="banner">
-    <div class="masthead grid grid-middle gutter">
+    <section class="masthead grid grid-middle gutter">
       <h1 class="logo push-0 unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
         <span class="logo-text icon-label text-left">E-OUIJA</span>
       </h1>
@@ -32,45 +31,48 @@
           <li class="btn"><a href="tour.html">Features</a></li>
         </ul>
       </nav>
-    </div>
+    </section>
   </header>
 
-  <section class="contact max-length island" tabindex="0">
+  <main role="main" class="contact max-length island" id="main" tabindex="0">
     <div>
 
+      <h2 class="tera bold push-0">Join E-OUIJA</h2>
+      <section class="banner embed embed-5by1 push-1-2">
+        <img role="presentation" class="embed-item" src="images/paint.jpg" alt="" aria-details="about">
+      </section>
       <form class="push-0 max-width" method="POST" action="https://formspree.io/">
-      <fieldset class="push-0">
-        <legend class="mega not-bold push-1-2" id="freetrial">Join E-OUIJA</legend>
-        <section class="grid max-length">
-          <div class="unit xs-1 s-1 m-1 l-1-2">
-            <label class="kilo text-left" for="email">Email</label>
-            <input class="push" id="email" type="email" name="email" required>
-          </div>
+        <fieldset class="push-0">
+          <legend class="kilo not-bold push-1-2" id="form" tabindex="0">Learn from thousands of ghosts</legend>
+          <section class="grid max-length">
+            <div class="unit xs-1 s-1 m-1 l-1-2">
+              <label class="kilo text-left" for="email">Email</label>
+              <input class="push" id="email" type="email" name="email" required>
+            </div>
 
-          <div class="unit xs-1 s-1 m-1 l-1-2">
-            <label class="kilo text-left" for="password">Password</label>
-            <input class="push" id="password" type="password" name="password" required>
-          </div>
+            <div class="unit xs-1 s-1 m-1 l-1-2">
+              <label class="kilo text-left" for="password">Password</label>
+              <input class="push" id="password" type="password" name="password" required>
+            </div>
 
-          <div class="unit xs-1 s-1 m-1 l-1-2">
-            <label class="kilo text-left" for="plan">Choose plan</label>
-            <select id="plan">
-            <option value="">Choose your plan</option>
-            <option>One Month Free Trial</option>
-            <option>Annual Membership</option>
-            </select>
-          </div>
+            <div class="unit xs-1 s-1 m-1 l-1-2">
+              <label class="kilo text-left" for="plan">Choose plan</label>
+              <select id="plan">
+                <option value="">Choose your plan</option>
+                <option>One Month Free Trial</option>
+                <option>Annual Membership</option>
+              </select>
+            </div>
 
-        </section>
-      </fieldset>
-      <div class="text-center pad-t">
-      <button class="btn btn-red kilo" type="submit">Start classes!</button>
+          </section>
+        </fieldset>
+        <div class="text-center pad-t">
+          <button class="btn btn-light kilo" type="submit" aria-label="Start classes">Start classes!</button>
+        </div>
+      </form>
     </div>
-  </form>
+  </main>
 
-  <section>
-    <li class="btn"><a href="index.html" aria-label="Go back to the Homepage">Back to Homepage</a></li>
-  </section>
   <hr>
   <footer role="contentinfo">
     <div class="footer nano text-left gutter-1-2 push pad-t">

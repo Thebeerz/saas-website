@@ -55,6 +55,11 @@ a {
   color: #fff;
 }
 
+.btn:hover {
+  background-color: #e34c38;
+  border-color: #e34c38;
+}
+
 a:focus,
 [tabindex="0"]:focus,
 details:focus,
