@@ -17,16 +17,14 @@
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
     <li><a href="#join">Jump to Plans</a></li>
+    <li><a href="#banner">Jump to Banner</a></li>
+
   </ul>
 
-  <header role="banner">
-    <div class="masthead embed grid grid-middle gutter">
+  <header role="banner" id="banner">
+    <div class="masthead grid grid-middle gutter">
       <h1 class="logo push-0 unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2">
-        <figure class="push-0">
-          <div class="logo embed embed-5by1 push-0">
-            <img class="embed-item" src="images/logo.png" alt="" aria-details="logo">
-          </div>
-        </figure>
+        <img class="logo img-flex" src="images/logo.png" alt="logo" aria-details="logo">
       </h1>
       <nav role="navigation" id="nav" tabindex="0" class="nav unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
         <ul class="nav list-group list-group-inline push-0">
@@ -38,16 +36,20 @@
     </div>
   </header>
 
-  <main class="pad-t-2 pad-b-2 gutter" tabindex="0">
+  <main role="main" class="pad-t-2 pad-b-2 gutter" tabindex="0" id="main">
     <section class="wrapper" id="plans">
       <div class="wrapper">
         <h2 class="push-0 color-brand-dark">Subscription plans</h2>
       </div>
 
+      <section class="banner embed embed-5by1 push-1-2">
+        <img role="presentation" class="embed-item" src="images/paint.jpg" alt="">
+      </section>
+
       <table>
-        <caption>Subscription plans for Free Trial and Membership</caption>
-          <thead>
-            <tr>
+        <caption class="mega not-italic">Subscription plans for Free Trial and Membership</caption>
+        <thead class="bold mega">
+          <tr>
             <th scope="col"></th>
             <th scope="col">Free trial</th>
             <th scope="col">Membership</th>
@@ -55,17 +57,17 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Subscription</th>
+            <th class="bold mega" scope="row">Subscription</th>
             <td>1 month free</td>
             <td>Free forever</td>
           </tr>
           <tr>
-            <th scope="row">Course material</th>
+            <th class="bold mega" scope="row">Course material</th>
             <td>All courses</td>
             <td>All courses</td>
           </tr>
           <tr>
-            <th scope="row">Course access</th>
+            <th class="bold mega" scope="row">Course access</th>
             <td>No</td>
             <td>Yes</td>
           </tr>
@@ -74,28 +76,11 @@
     </section>
   </main>
 
+  <section>
+    <li class="btn"><a href="index.html" aria-label="Go back to the Homepage">Back to Homepage</a></li>
+  </section>
+
   <hr>
-  <footer class="text-center">
-    <div class="contact grid">
-      <div class="unit m-1-3 l-1-3 text-left gutter-1-2 pad-t">
-        <h3 class="micro bold push-0">Contact</h3>
-        <p class="micro push-0">eouija@staff.com</p>
-        <p class="micro push-0">7881 West Cypress Lane</p>
-      </div>
-
-      <div class="unit m-1-3 l-1-3 text-left gutter-1-2 pad-t">
-        <h3 class="micro bold push-0">FAQs</h3>
-        <p class="micro push-0">When can I access courses?</p>
-        <p class="micro push-0">How to subscribe to classes?</p>
-        <p class="micro push-0">How to setup E-Ouija App</p>
-      </div>
-
-      <nav class="unit">
-        <a class="btn btn-light bold push" href="signup.html">Sign up</a>
-      </nav>
-    </div>
-  </footer>
-
   <footer role="contentinfo">
     <div class="footer nano text-left gutter-1-2 push pad-t">
       <p class="push-0">© E-ouija online courses</p>

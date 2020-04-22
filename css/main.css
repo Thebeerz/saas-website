@@ -30,6 +30,10 @@ a {
   border: none;
 }
 
+.logo {
+  width: 50%;
+}
+
 .banner {
   position: relative;
   max-height: 24em;
@@ -43,12 +47,12 @@ a {
 }
 
 .nav a span {
-  border-bottom: .3rem solid #bea59b;
+  border: .3rem solid #bea59b;
 }
 
 .nav a:hover span,
 .nav a:focus span {
-  border-bottom-color: #fff;
+  color: #fff;
 }
 
 a:focus,
@@ -62,44 +66,3 @@ select:focus {
   outline: 3px solid #fff;
   outline-offset: 0;
 }
-
-/* label {
-  cursor: pointer;
-  border-radius: .3rem;
-  text-align: center;
-  padding-top: .2rem;
-  z-index: 1;
-  height: 1.5rem;
-  width: 8rem;
-  margin-top: .5rem;
-  display: inline-block;
-} */
-
-/* #menu-toggle {
-  display: none;
-}
-
-#menu {
-  z-index: 1;
-  background-color: #000;
-  overflow: hidden;
-  max-height: 0;
-  position: absolute;
-  left: .5rem;
-  bottom: 0;
-  max-width: 7rem;
-  height: 15rem;
-  padding: 0 1rem;
-  -webkit-transition: all .5s ease;
-}
-
-#menu li {
-  padding: .5rem;
-}
-
-#menu-toggle:checked + #menu {
-  max-height: 11.5rem;
-  position: absolute;
-  left: .3rem;
-  bottom: -12rem;
-} */
