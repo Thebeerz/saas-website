@@ -50,14 +50,15 @@ a {
   border: .3rem solid #bea59b;
 }
 
-.nav a:hover span,
-.nav a:focus span {
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
   color: #fff;
 }
 
-.btn:hover {
-  background-color: #e34c38;
+.current {
   border-color: #e34c38;
+  color: #e34c38;
 }
 
 a:focus,
