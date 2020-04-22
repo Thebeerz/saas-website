@@ -34,11 +34,11 @@ a {
   width: 50%;
 }
 
-.banner {
+/* .hero-banner {
   position: relative;
   max-height: 24em;
   overflow: hidden;
-}
+} */
 
 .banner-content {
   position: absolute;
@@ -61,7 +61,7 @@ a {
   color: #e34c38;
 }
 
-.question, .blue {
+.question, h2, h3 {
   color: #7398c2;
 }
 
