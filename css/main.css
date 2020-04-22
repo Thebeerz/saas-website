@@ -61,6 +61,10 @@ a {
   color: #e34c38;
 }
 
+.question {
+  color: #7398c2;
+}
+
 a:focus,
 [tabindex="0"]:focus,
 details:focus,
